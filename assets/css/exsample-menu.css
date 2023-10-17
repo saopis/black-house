@@ -1,0 +1,111 @@
+.box-left{
+  float: left;
+  width: 50%;
+  margin: 0px;
+  margin-left: 0px;
+
+
+}
+.box-right{
+  margin: 0px;
+  float: left;
+  width: 45%;
+  border-left: 3px solid gray;
+ // border: 2px solid red;
+  //border-radius: 30px;
+}
+.menu{
+  width: 70%;
+  margin: 20px; 
+  margin-left: 10%;
+  position: relative;
+  
+}
+.menu-body{
+  height: 295px; 
+  border-radius: 0px;
+  background-image: url('../../image/Photo-icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px;
+}
+.menu-header{
+  background-color: white;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  z-index: 2;
+  top: 0px;
+  right: 0px;
+  padding: 10px;
+  font-size: 20px;
+}
+.menu-price{
+  z-index: 2;
+  display: none;
+  background-color: rgba(255,255,255,0.8); 
+  width: 35%; height: 40px; 
+  position: absolute; 
+  right: 0px; 
+  bottom: 80px;
+  padding-top: 5px; 
+  text-align: center;
+  font-size: 25px;
+  color: black;
+
+}
+.menu-footer{
+  z-index: 2;
+  display: none;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+}
+.menu-filter{
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  background-color: rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .box-left{
+    display: block;
+    height: 500px;
+    width: 100%;
+    margin: 0px;
+    border: 0px;
+  }
+  .box-right{
+    margin: 0px;
+    display: block;
+    height: 500px;
+    width: 100%;
+    border-top: 3px solid gray;
+    border-left: 0px;
+  }
+  .menu{
+    width: 80%;
+  }
+  .menu-body{
+    height: 195px; 
+  }
+}
+@media screen and (max-width: 1268px) {
+  .menu-price{
+    padding-top: 10px;
+    font-size: 17px;
+  }
+  .menu-body{
+    height: 205px; 
+  }
+}

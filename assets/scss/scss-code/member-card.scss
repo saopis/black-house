@@ -1,0 +1,181 @@
+  .member{
+    float: left;
+    width: 420px;
+    height: 215px;
+    margin: 10px;
+    margin-left: 30px;
+    border:1px solid #a3a3a3;
+
+  }
+  
+  .member-img{
+    float: left;
+    width: 40%;
+    height: 100%;
+    margin: 0px;
+    padding: 5%;
+    padding-top: 3%;
+    text-align: center;
+    background-color: #008080;
+    //border:1px solid #a3a3a3;
+  }
+
+  .member-content{
+    float: left;
+    width: 60%;
+    height: 100%;
+    padding: 10px;
+    padding-top: 10px;
+    margin: 0px;
+    //border:1px solid #a3a3a3;
+  }
+  .member-content>p{
+    margin-left: 30px;
+  }
+  .container-fluid{
+    margin: 0px;
+    padding: 0px;
+  }
+  .member .btn{
+
+    margin-bottom: 33px;
+  }
+  #user_name{
+    font-size: 18px;
+  }
+  .member .switch {
+      position: relative;
+      display: inline-block;
+      width: 55px;
+      height: 30px;
+      margin-bottom: 5px;
+    }
+    
+  .member-img img{
+    width: 130px;
+    height: 130px;
+    border:3px solid #ffff;
+  }
+  @media screen and (min-width: 550px) {
+    .member-img img{
+      width:130; 
+      height:130;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .member{
+      float: left;
+      width: 97%;
+      height: 150px;
+      margin: 5px;
+      border:1px solid #a3a3a3;
+    }
+
+    .member-img{
+      float: left;
+      width: 35%;
+      height: 100%;
+      margin: 0px;
+      padding: 5%;
+      padding-top: 3%;
+      text-align: center;
+      //border:1px solid #a3a3a3;
+
+    }
+
+    .member-content{
+      float: left;
+      width: 65%;
+      height: 100%;
+      padding: 20px;
+      padding-top: 10px;
+      margin: 0px;
+      //border:1px solid #a3a3a3;
+      font-size: 15px;
+    }
+    .member-content>p{
+      font-size: 10px;
+      margin: 0px;
+      margin-left: 5px;
+    }
+    .btn-text{
+      display: none;
+    }
+    #user_name{
+    font-size: 12px;
+    }
+    .container-fluid{
+    margin-left: 15%;
+    padding: 0px;
+    }
+    .member .switch {
+      position: relative;
+      display: inline-block;
+      width: 55px;
+      height: 30px;
+      margin-bottom: 5px;
+    }
+    .member-img img{
+      width: 85px;
+      height: 85px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .member .btn{
+      height: 20px;
+      padding-top: 1px;
+    }
+    .container-fluid{
+      margin-left: 5%;
+      padding: 0px;
+    }
+    .member .switch {
+      position: relative;
+      display: inline-block;
+      width: 35px;
+      height: 20px;
+      margin-bottom: 10px;
+
+    }
+
+    /* Hide default HTML checkbox */
+    .member .switch input {display:none;}
+
+    /* The slider */
+    .member .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+
+    }
+
+    .member .slider:before {
+      position: absolute;
+      content: "";
+      height: 12px;
+      width: 12px;
+      left: 5px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    .member input:checked + .slider:before {
+    -webkit-transform: translateX(12px);
+    -ms-transform: translateX(12px);
+    transform: translateX(12px);
+  }
+}
+@media screen and (max-width: 380px) {
+.member-img img{
+      width: 70px;
+      height: 70px;
+    }
+}

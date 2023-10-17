@@ -1,0 +1,205 @@
+/*
+ * Skin: Black
+ * -----------
+ */
+$bdcolor: #404040;
+$bghover:#333333;
+$bgcolor:#222222;
+/* skin-black navbar */
+.skin-black {
+  .main-header {
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+
+    .navbar-toggle {
+      color: #ffff;
+    }
+
+    .navbar-brand {
+      color: #ffff;
+      border-right: 1px solid $bdcolor;
+    }
+
+    .navbar {
+      background-color: $bdcolor;
+
+      .nav > li > a {
+        color: #fff;
+      }
+
+      .nav {
+        > li > a:hover, > li > a:active, > li > a:focus, .open > a, .open > a:hover, .open > a:focus, >.active > a {
+          background: $bghover;
+          color: #999999;
+        }
+
+      }
+
+      .sidebar-toggle {
+        color: white;
+
+        &:hover {
+          color: #999999;
+          background: $bghover;
+        }
+
+      }
+
+      > .sidebar-toggle {
+        color: white;
+        border-right: 1px solid $bdcolor;
+      }
+
+      .navbar-nav > li > a {
+        border-right: 1px solid $bdcolor;
+      }
+
+      .navbar-custom-menu .navbar-nav > li > a, .navbar-right > li > a {
+        border-left: 1px solid $bdcolor;
+        border-right-width: 0;
+      }
+
+    }
+
+    > .logo {
+      background-color: $bgcolor;
+      color: white;
+      border-bottom: 0 solid transparent;
+      border-right: 1px solid $bgcolor;
+
+      &:hover {
+        background-color: $bgcolor;
+      }
+
+    }
+
+    @media (max-width:767px) {
+      > .logo {
+        background-color: $bgcolor;
+        color: white;
+        border-bottom: 0 solid transparent;
+        border-right: none;
+
+        &:hover {
+          background-color: #1f1f1f;
+        }
+
+      }
+
+    }
+
+    li.user-header {
+      background-color: $bghover;
+    }
+
+  }
+
+  .content-header {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .wrapper, .main-sidebar, .left-side {
+    background-color: #222d32;
+  }
+
+  .user-panel > .info, .user-panel > .info > a {
+    color: white;
+  }
+
+  .sidebar-menu {
+    > li.header {
+      color: #4b646f;
+      background: #1a2226;
+    }
+
+    > li {
+      > a {
+        border-left: 3px solid transparent;
+      }
+
+      &:hover > a, &.active > a, &.menu-open > a {
+        color: #ffffff;
+        background: #1e282c;
+      }
+
+      > .treeview-menu {
+        margin: 0 1px;
+        background: #2c3b41;
+      }
+
+      .treeview-menu > li > a {
+        color: #8aa4af;
+      }
+
+      .treeview-menu > li.active > a, .treeview-menu > li > a:hover {
+        color: #ffffff;
+      }
+
+    }
+
+    > li.active > a {
+      border-left-color: #ffffff;
+    }
+
+  }
+
+  .sidebar a {
+    color: #b8c7ce;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+  }
+
+  .sidebar-form {
+    border-radius: 3px;
+    border: 1px solid #374850;
+    margin: 10px 10px;
+
+    input[type="text"], .btn {
+      box-shadow: none;
+      background-color: #374850;
+      border: 1px solid transparent;
+      height: 35px;
+    }
+
+    input[type="text"] {
+      color: #666;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 2px;
+
+      &:focus, &:focus + .input-group-btn .btn {
+        background-color: #fff;
+        color: #666;
+      }
+
+      &:focus + .input-group-btn .btn {
+        border-left-color: #fff;
+      }
+
+    }
+
+    .btn {
+      color: #999;
+      border-top-left-radius: 0;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+      border-bottom-left-radius: 0;
+    }
+
+  }
+
+  .pace .pace-progress {
+    background: #222;
+  }
+
+  .pace .pace-activity {
+    border-top-color: #222;
+    border-left-color: #222;
+  }
+
+}

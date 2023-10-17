@@ -1,0 +1,122 @@
+.menu{
+  width: 400px;
+  margin: 30px; 
+  margin-left: 0px;
+  position: relative;
+  float: left;
+  //border: 1px solid grey;
+}
+.menu:hover{
+  z-index: 3;
+}
+.menu-body{
+  height: 255px; 
+  //border-radius: 0px;
+  //border-top: 1px solid grey;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.menu-header{
+  background-color: #B0E0E6;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  z-index: 2;
+  top: 0px;
+  right: 0px;
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+}
+.menu-header>.pull-right{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: none;
+}
+
+.menu-header .pull-right button{
+  background-color: rgba(0,0,0,0);
+  border-width: 0px;
+}
+.menu-header .pull-right button:hover{
+  color: black;
+}
+.menu-price{
+  z-index: 2;
+  display: none;
+  background-color: rgba(255,255,255,0.8); 
+  width: 35%; height: 40px; 
+  position: absolute; 
+  right: 0px; 
+  bottom: 80px;
+  padding-top: 5px; 
+  text-align: center;
+  font-size: 18px;
+  color: black;
+
+}
+.menu-footer{
+  z-index: 2;
+  display: none;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: 0px;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+}
+.menu-footer button{
+  background-color: rgba(0,0,0,0.2);
+  border-width: 0pc;
+  width: 50%;
+  height: 100%;
+  z-index: 10;
+}
+.menu-footer button:hover{
+  background-color: rgba(0,0,0,0.8);
+  border-width: 0pc;
+  height: 100%;
+}
+.menu-footer a{
+  color: white;
+}
+.menu-filter{
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  background-color: rgba(176,224,230,0.1);
+}
+.data{
+  padding: 10px;
+}
+.menu-recommended{
+  z-index: 3;
+  width: 80px;
+  position: absolute;
+  //top: 50px;
+  right: 5px;
+
+}
+@media screen and (max-width: 768px) {
+  .menu{
+    width: 100%;
+    margin-bottom: 10px; 
+    position: relative;
+    float: left;
+  }
+  .menu-price{
+    padding-top: 10px;
+    font-size: 17px;
+  }
+  .menu-body{
+    height: 200px; 
+  }
+}
